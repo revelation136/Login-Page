@@ -1,0 +1,89 @@
+// Variables
+$width_form: 300px;
+
+// inheritance
+%login_details {
+    height: 60px;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+%input_details {
+    display: flex;
+    width: $width_form;
+    padding: 5px;
+    margin: 5px;
+}
+
+%icon {
+    display: flex;
+    position: relative;
+    color: black;
+    top: 15px;
+    left: -5px
+}
+// Styles
+
+body {
+    margin: 10px;
+    padding: 10px;
+    background-image: url('Blueprintbackground.jpg');
+    font-family: 'Poppins', sans-serif;
+
+    div{
+        height: 100%;
+        width: 100%;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 25vh;
+            color: rgb(255, 255, 255);
+            text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+            font-size: 50px;
+        }
+
+        div {
+            position: relative;
+            top: 15vh;
+            justify-content: center;
+            display: flex;
+
+            .username {
+                @extend %login_details;
+                background-color: slategray;
+                
+                .fa-id-badge {
+                    @extend %icon;
+                    font-size: 30px;
+                }    
+
+                input {
+                   @extend %input_details; 
+                }
+
+            }
+
+            .password {
+                background-color: skyblue;
+                @extend %login_details;
+
+                .fa-lock {
+                    @extend %icon;
+                    font-size: 25px;
+                }
+
+                input {
+                    @extend %input_details;
+                }
+            }
+        }
+
+        .button {
+            position: relative;
+            top: 40vh;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+body div div .password, body div div .username {
+  height: 60px;
+  width: 400px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+body div div .password input, body div div .username input {
+  display: flex;
+  width: 300px;
+  padding: 5px;
+  margin: 5px;
+}
+
+body div div .password .fa-lock, body div div .username .fa-id-badge {
+  display: flex;
+  position: relative;
+  color: black;
+  top: 15px;
+  left: -5px;
+}
+
+body {
+  margin: 10px;
+  padding: 10px;
+  background-image: url("Blueprintbackground.jpg");
+  font-family: "Poppins", sans-serif;
+}
+body div {
+  height: 100%;
+  width: 100%;
+}
+body div h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 25vh;
+  color: white;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-size: 50px;
+}
+body div div {
+  position: relative;
+  top: 15vh;
+  justify-content: center;
+  display: flex;
+}
+body div div .username {
+  background-color: slategray;
+}
+body div div .username .fa-id-badge {
+  font-size: 30px;
+}
+body div div .password {
+  background-color: skyblue;
+}
+body div div .password .fa-lock {
+  font-size: 25px;
+}
+body div .button {
+  position: relative;
+  top: 40vh;
+}
+
+/*# sourceMappingURL=Styles.css.map */
